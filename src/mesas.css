@@ -1,0 +1,180 @@
+body{
+  background-image: linear-gradient(to left,#a89999, #9c6060, #a23333);
+}
+
+.mesas{
+
+    align-content:center;
+    /* margin-left: 140px;
+    margin-right: 140px; */
+    
+   grid-template-columns: repeat(auto-fill, 370px);
+   justify-content: center;
+   gap: 0px;
+   margin-top: -800px;
+   margin-left: 100px;
+
+   
+}
+
+
+  [data-content]{
+    display: none;
+  }
+  .active[data-content]{
+    display: grid;
+  }
+
+
+
+  .ventas{
+    background-color: aqua;
+    
+    margin-top: -700px;
+  }
+
+.mesa1 button{
+  color: black;
+  display: flex;
+  margin-left: 60px;
+  margin-bottom: 10px;
+  /* margin-left: -160px; */
+  
+  
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.mesa2 button{
+  color: black;
+  display: flex;
+  margin-left: 60px;
+  margin-bottom: 10px;
+  /* margin-left: -160px; */
+  background-color: rgb(255, 255, 255);
+  
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;}
+
+.mesa3 button{
+  color: black;
+  display: flex;
+  margin-left: 60px;
+  margin-bottom: 10px;
+  /* margin-left: -160px; */
+  background-color: rgb(255, 255, 255);
+
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.mesa4 button{
+  color: black;
+  display: flex;
+  margin-left: 60px;
+  margin-bottom: 10px;
+  /* margin-left: -160px; */
+  background-color: rgb(255, 255, 255);
+  
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.mesa5 button{
+  color: black;
+  display: flex;
+  margin-left: 60px;
+  margin-bottom: 10px;
+  /* margin-left: -160px; */
+  background-color: rgb(255, 255, 255);
+  
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.mesa6 button{
+  color: black;
+  display: flex;
+  margin-left: 60px;
+  margin-bottom: 10px;
+  /* margin-left: -160px; */
+  background-color: rgb(255, 255, 255);
+  
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.mesa7 button{
+  color: black;
+  display: flex;
+  margin-left: 60px;
+  margin-bottom: 10px;
+  /* margin-left: -160px; */
+  background-color: rgb(255, 255, 255);
+  
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+    
+}
+.mesa8 button{
+  color: black;
+  display: flex;
+  margin-left: 60px;
+  margin-bottom: 10px;
+  /* margin-left: -160px; */
+  background-color: rgb(255, 255, 255);
+  
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.mesa9 button{
+  color: black;
+  display: flex;
+  margin-left: 60px;
+  margin-bottom: 10px;
+  /* margin-left: -160px; */
+  background-color: rgb(255, 255, 255);
+ 
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.mesa10 button{
+  color: black;
+  display: flex;
+  margin-left: 60px;
+  margin-bottom: 10px;
+  /* margin-left: -160px; */
+  background-color: rgb(255, 255, 255);
+  
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.mesa11 button{
+  color: black;
+  display: flex;
+  margin-left: 60px;
+  margin-bottom: 10px;
+  /* margin-left: -160px; */
+  background-color: rgb(255, 255, 255);
+  
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.mesa12 button{
+  color: black;
+  display: flex;
+  margin-left: 60px;
+  margin-bottom: 10px;
+  /* margin-left: -160px; */
+  background-color: rgb(255, 255, 255);
+  
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}

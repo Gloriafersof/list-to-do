@@ -1,0 +1,74 @@
+.informacion-mesa1{
+    margin-left: 1080px;
+    position: absolute;
+    background-color: rgb(112 88 55 / 16%);
+   margin-top: -10px;
+    width: 17rem;
+    height: 800px;
+    transition: all .5s ease;
+   
+    
+}
+
+.informacion-mesa1 ul{
+    display: flex;
+    
+    list-style: none;
+    gap: 40px;
+   width: 30px;
+}
+
+[data-mesa]{
+    display: none;
+  }
+  .muestra[data-mesa]{
+    display: flex;
+  }
+
+
+
+
+  .informacion-mesa2{
+    margin-left: 1100px;
+    position: absolute;
+    background-color:rgb(0 0 0 / 43%);
+    margin-top: -5px;
+    width: 16rem;
+    height: 800px;
+    transition: all .5s ease;
+   
+    
+}
+
+.informacion-mesa2 ul{
+    display: flex;
+    
+    list-style: none;
+    gap: 40px;
+   width: 30px;
+}
+
+
+.informacion-mesa3{
+  margin-left: 1100px;
+  position: absolute;
+  background-color:rgb(0 0 0 / 43%);
+  margin-top: -5px;
+  width: 16rem;
+  height: 800px;
+  transition: all .5s ease;
+ 
+  
+}
+
+.informacion-mesa3  ul{
+  display: flex;
+  
+  list-style: none;
+  gap: 40px;
+ width: 30px;
+}
+
+
+
+
