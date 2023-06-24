@@ -1,0 +1,15 @@
+.ventas{
+    margin-left: 200px;
+   background-color: aliceblue;
+    margin-top: -800px;
+    width: 90%;
+    height: 700px;
+}
+
+.ventas ul{
+    flex-direction: initial;
+    display: flex;
+    justify-content: space-around;
+
+    border:solid 5px black;
+}

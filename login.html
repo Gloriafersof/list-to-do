@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/login.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+          <form action="#">
+            <h1>Crea tu Cuenta</h1>
+            <div class="social-container">
+              <a href="#" class="social>">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social>">
+                <i class="fab fa-google" id="red"></i>
+              </a>
+              <a href="#" class="social>">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <span>o usa tu email como registro</span>
+            <input type="text" placeholder="Nombre" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Contrasena" />
+             <div class="opciones">
+             <label for=""><input type="checkbox" name="" id="">Mesero</label>
+             <label for=""><input type="checkbox" name="" id="">Cajero</label>
+            </div>
+            <button id="green">Registrar</button>
+          </form>
+        </div>
+        <div class="form-container sign-in-container">
+          <form action="#">
+            <h1>Iniciar Sesión</h1>
+            <div class="social-container">
+              <a href="#" class="social">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social>">
+                <i class="fab fa-google" id="red"></i>
+              </a>
+              <a href="#" class="social">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <span>o usa tu email</span>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Contraseña" />
+            <a href="#">Olvidaste tu contraseña?</a>
+            <div class="opciones">
+              <label for=""><input type="checkbox" name="" id="">Mesero</label>
+              <label for=""><input type="checkbox" name="" id="">Cajero</label>
+            </div>
+            <button>Iniciar sesión</button>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>¡Bienvenido!</h1>
+              <p>
+                Inicia sesión con tu cuenta
+              </p>
+              <button class="ghost" id="signIn">Inicia sesión</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Bienvenido!</h1>
+              <p>Crear tu cuenta</p>
+              <button class="ghost" id="signUp">Registrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="./js/sign.js"></script>
+</body>
+</html>

@@ -27,11 +27,6 @@ body{
 
 
 
-  .ventas{
-    background-color: aqua;
-    
-    margin-top: -700px;
-  }
 
 .mesa1 button{
   color: black;
@@ -178,3 +173,11 @@ body{
   border: none;
   cursor: pointer;
 }
+
+.agrgados{
+  flex-direction:column;
+  margin-top: 100px;
+  background-color: aliceblue;
+  border:solid 5px black;
+}
+
