@@ -1,5 +1,5 @@
 body{
-  background-image: linear-gradient(to left,#a89999, #9c6060, #a23333);
+  background-image: url('/img/Presentacion\ encuentra\ tu\ creatividad\ papel\ azul.png')
 }
 
 .mesas{
@@ -174,10 +174,4 @@ body{
   cursor: pointer;
 }
 
-.agrgados{
-  flex-direction:column;
-  margin-top: 100px;
-  background-color: aliceblue;
-  border:solid 5px black;
-}
 

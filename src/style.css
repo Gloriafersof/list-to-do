@@ -31,6 +31,7 @@
     display: none;
     justify-content: center;
     align-items: center;
+    font-size: 22px;
     
 }
 .menu ul{
@@ -51,7 +52,7 @@
     text-decoration: none;
     color: rgb(255, 228, 228);
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 27px;
 }
 
 
@@ -75,8 +76,8 @@
 
 
 .productos{
-    background-color: rgb(173, 144, 105);
-margin-top: -10px;
+  background-color: rgba(157, 34, 34, 0.862);
+margin-top: -17px;
     width: 10rem;
     height: 800px;
     transition: all .5s ease;
@@ -87,7 +88,7 @@ margin-top: -10px;
     flex-direction: column;
     list-style: none;
     gap: 40px;
-   width: 30px;
+   width: 70%;
    
   }
   
@@ -98,6 +99,10 @@ margin-top: -10px;
       font-size: 20px;
       display: block;
       cursor: pointer;
+  }
+  .menu-open li:hover a{
+    
+    color: white;
   }
   
   .menu-open ul a.is-active{
