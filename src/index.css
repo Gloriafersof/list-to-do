@@ -1,4 +1,6 @@
 @import "./style.css";
 @import "./mesas.css";
 @import "./infomesa.css";
-@import "./ventas.css"
+@import "./ventas.css";
+@import './comida.css';
+@import './compra.css'

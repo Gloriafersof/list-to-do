@@ -3,8 +3,12 @@ const options= document.getElementById("productos-abiertos");
 
 
 button.addEventListener("click", () => {
-    button.classList.toggle("close");
+   
     options.classList.toggle("show");
+    itemsbebidas.classList.remove("abrir");
+    itemscomida.classList.remove("abrir");
+    ventas.classList.remove("abrir");
+    mesas.classList.remove("abrir");
    
 });
 
@@ -19,20 +23,105 @@ button.addEventListener("click", () => {
 
 
 
-const targets= document.querySelectorAll('[data-target]');
-const content=document.querySelectorAll('[data-content]')
 
-targets.forEach(target =>{
-    target.addEventListener('click', ()=>{
+const butonmesas = document.getElementById("mesasboton");
+const butonventas= document.getElementById("ventasboton");
+const butoncompra= document.getElementById('compraboton');
+const mesas= document.getElementById("mesas");
+const ventas= document.getElementById('ventas');
+const compra= document.getElementById('compra');
 
-        content.forEach(c=>{
-            c.classList.remove('active')
-        })
+ butonmesas.addEventListener("click", () => {
+   
+    mesas.classList.toggle("muestra");
+     
+    
+   
+});
 
-        const t =document.querySelector(target.dataset.target)
-        t.classList.add('active')
-    })
-})
+
+
+butonventas.addEventListener("click", () => {
+   
+    ventas.classList.toggle("muestra");
+    mesas.classList.remove("abrir");
+    
+    
+   
+});
+
+
+
+butoncompra.addEventListener("click", () => {
+   
+    compra.classList.toggle("muestra");
+     ventas.classList.remove("muestra");
+    
+   
+});
+
+
+// const targets= document.querySelectorAll('[data-target]');
+// const content=document.querySelectorAll('[data-content]')
+
+// targets.forEach(target =>{
+//     target.addEventListener('click', ()=>{
+
+//         content.forEach(c=>{
+//             c.classList.remove('active')
+//         })
+
+//         const t =document.querySelector(target.dataset.target)
+//         t.classList.add('active')
+//     })
+// })
+
+// comida
+
+
+
+const comida = document.getElementById("combosboton");
+const itemscomida= document.getElementById("comida-items");
+const itemsbebidas= document.getElementById('bebida-items')
+const bebidas= document.getElementById('bebidasboton');
+const comidaop= document.getElementById('comida-options');
+const comer= document.getElementById('comidaboton');
+
+
+
+comida.addEventListener("click", () => {
+   
+    itemscomida.classList.toggle("abrir");
+    itemsbebidas.classList.remove("abrir");
+    comidaop.classList.remove("abrir");
+   
+});
+
+
+bebidas.addEventListener("click", () => {
+   
+    itemsbebidas.classList.toggle("abrir");
+    itemscomida.classList.remove("abrir");
+    comidaop.classList.remove("abrir");
+});
+
+comer.addEventListener("click", () => {
+   
+    comidaop.classList.toggle("abrir");
+    itemsbebidas.classList.remove("abrir");
+    itemscomida.classList.remove("abrir");
+});
+
+
+
+
+
+
+
+
+
+
+
 
 
 // CLICK MESAS

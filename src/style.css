@@ -10,6 +10,7 @@
     justify-content: center;
     color: aliceblue;
     font-size: 60px;
+   
 
 }
 
@@ -33,6 +34,13 @@
     align-items: center;
     font-size: 22px;
     
+}
+
+[data-mesa]{
+  display: none;
+}
+.muestra[data-mesa]{
+  display: flex;
 }
 .menu ul{
   display: flex;
@@ -79,8 +87,8 @@
   background-color: rgba(157, 34, 34, 0.862);
 margin-top: -17px;
     width: 10rem;
-    height: 800px;
-    transition: all .5s ease;
+    height: 1900px;
+    transition: all .5s ease;   
    
 }
 .menu-open ul{

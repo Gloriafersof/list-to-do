@@ -1,6 +1,10 @@
 body{
-  background-image: url('/img/Presentacion\ encuentra\ tu\ creatividad\ papel\ azul.png')
-}
+  background-image: url('/img/Imagen\ de\ WhatsApp\ 2023-06-29\ a\ las\ 14.05.22.jpg');
+  background-repeat: no-repeat;
+  background-position:  center;
+  height: 2100px;
+  background-size: cover;
+  }
 
 .mesas{
 
@@ -8,14 +12,26 @@ body{
     /* margin-left: 140px;
     margin-right: 140px; */
     
-   grid-template-columns: repeat(auto-fill, 370px);
+   grid-template-columns: repeat(auto-fill, 330px);
    justify-content: center;
    gap: 0px;
-   margin-top: -800px;
-   margin-left: 100px;
+   margin-top: -1900px;
+   margin-left: 150px;
+   background-color: beige;
+   width: 80%;
+   display: grid;
+ display: none;
 
    
 }
+
+.abrir{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+
 
 
   [data-content]{
@@ -26,6 +42,9 @@ body{
   }
 
 
+  .content1{
+    
+  }
 
 
 .mesa1 button{
@@ -35,7 +54,7 @@ body{
   margin-bottom: 10px;
   /* margin-left: -160px; */
   
-  
+  font-size: 20px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -47,7 +66,7 @@ body{
   margin-bottom: 10px;
   /* margin-left: -160px; */
   background-color: rgb(255, 255, 255);
-  
+  font-size: 20px;
   border-radius: 10px;
   border: none;
   cursor: pointer;}
@@ -59,7 +78,7 @@ body{
   margin-bottom: 10px;
   /* margin-left: -160px; */
   background-color: rgb(255, 255, 255);
-
+  font-size: 20px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -71,7 +90,7 @@ body{
   margin-bottom: 10px;
   /* margin-left: -160px; */
   background-color: rgb(255, 255, 255);
-  
+  font-size: 20px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -83,7 +102,7 @@ body{
   margin-bottom: 10px;
   /* margin-left: -160px; */
   background-color: rgb(255, 255, 255);
-  
+  font-size: 20px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -95,7 +114,7 @@ body{
   margin-bottom: 10px;
   /* margin-left: -160px; */
   background-color: rgb(255, 255, 255);
-  
+  font-size: 20px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -107,7 +126,7 @@ body{
   margin-bottom: 10px;
   /* margin-left: -160px; */
   background-color: rgb(255, 255, 255);
-  
+  font-size: 20px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -120,7 +139,7 @@ body{
   margin-bottom: 10px;
   /* margin-left: -160px; */
   background-color: rgb(255, 255, 255);
-  
+  font-size: 20px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -132,7 +151,7 @@ body{
   margin-bottom: 10px;
   /* margin-left: -160px; */
   background-color: rgb(255, 255, 255);
- 
+  font-size: 20px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -144,7 +163,7 @@ body{
   margin-bottom: 10px;
   /* margin-left: -160px; */
   background-color: rgb(255, 255, 255);
-  
+  font-size: 20px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -156,7 +175,7 @@ body{
   margin-bottom: 10px;
   /* margin-left: -160px; */
   background-color: rgb(255, 255, 255);
-  
+  font-size: 20px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -168,7 +187,7 @@ body{
   margin-bottom: 10px;
   /* margin-left: -160px; */
   background-color: rgb(255, 255, 255);
-  
+  font-size: 20px;
   border-radius: 10px;
   border: none;
   cursor: pointer;

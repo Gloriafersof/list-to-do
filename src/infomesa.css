@@ -1,13 +1,9 @@
 .informacion-mesa1{
     margin-left: 1080px;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.16);
-   margin-top: -8px;
-    width: 17rem;
-    height: 800px;
-    transition: all .5s ease;
+    background-color: white
    
-    
+  
 }
 
 .informacion-mesa1 ul{
@@ -180,3 +176,13 @@
 .muestra[data-mesa]{
   display: flex;
 }
+
+
+
+.mesasinfo{
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  border-collapse: collapse;
+}
+

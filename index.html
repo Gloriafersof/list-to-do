@@ -14,20 +14,20 @@
             <h1>MARIPEREZ</h1>
         </div>
     </header>
-   
+    
         <div class="options">
-
+            
             <nav class="menu">
                 <ul>
-                    <li data-target="#mesas">
+                    <li  id="mesasboton">
                         <a href="#mesas">Mesas</a>
                     </li>
-                    <li data-target="#ventas">
+                    <li id="ventasboton">
                         <a href="#ventas">Ventas</a>
                     </li>
-                    <li> <a href="">Compra</a>
+                    <li id="compraboton"> <a href="#compra">compra</a>
                     </li>
-        
+                    
                 </ul>
             </nav>
         </div>
@@ -37,43 +37,62 @@
             <i class="fa-solid fa-bars" style="color: #221f1f;"></i>        
             
         </div>
-        <div class="productos show" id="productos-abiertos">
+        <div    class="productos show" id="productos-abiertos">
             <nav class="menu-open">
                 <ul>
-                    <li class="is-open">
-                        <a href="">Comida</a>
+                    <li   id="combosboton">
+                        <a href="#comida-items">Combos</a> 
                     </li>
-                    <li>
-                        <a href="">Bebidas</a>
+                    <li   id="comidaboton">
+                        <a href="#comida-options">Comida</a> 
                     </li>
+                    <li id="bebidasboton">
+                        <a href="#bebidasitems">Bebidas</a>
+                    </li>
+                    
                     <li> <a href="">Postres</a>
                     </li>
+                    
                     <li> <a href="">Otros</a>
                     </li>
                 </ul>
             </nav>
         </div>
         
-        <div class="content1">
+        <div class="content1" id="mesas">
             
-            <div data-content class="mesas cerrada"id="mesas">
+            <div    class="mesas cerrada"id="mesas">
                 <div  class="mesa1" id="mesas">
-                    <button data-boton id="data-boton">Mesa 1<button>
+                    <button data-boton id="data-boton">Mesa 1</button>
                     <img src="img/sillas.jpeg" alt="" width="170px" height="170px">
                 </div>
                 <section data-mesa class="informacion-mesa1" id="informacion-mesa1">
-                    <thead>
+                    <table class="Mesasinfo">
+                        <thead>
+                            <tr>
+                                <th>Descripcion</th><th>Costo</th>
+                            </tr>
+                        </thead>
+            
                         <tr>
-                            <th>Descripcion</th><th>Costo</th><th>Fecha</th><th>Total</th>
+                           <td>Agua</td><td>$3,00</td>
                         </tr>
-                    </thead>
-        
-                    <tr>
-                       <td>Agua</td><td>$3,00</td><td></td><td></td>
-                    </tr>
+                        <tr>
+                            <td>Combo 1</td><td>$17,00</td>
+                        </tr>
+                        <tr>
+                            <td>Combo 1</td><td>$17,00</td>
+                        </tr>
+                        <tr>
+                            <td>Combo 1</td><td>$17,00</td>
+                        </tr>
+                        <tr>
+                            <td>total</td><td></td>
+                        </tr>
+                    </table>
                 </section>
                 <div class="mesa2">
-                <button id="data-boton2">Mesa 2<button>
+                <button id="data-boton2">Mesa 2</button>
                     <img src="img/sillas.jpeg" alt="" width="170px" height="170px">
                 </div>
                 <section data-mesa class="informacion-mesa2" id="informacion-mesa2">
@@ -84,7 +103,7 @@
                     </ul>
                 </section>
                 <div class="mesa3">
-                    <button id="data-boton3">mesa3<button>
+                    <button id="data-boton3">mesa3</button>
                     <img src="img/sillas.jpeg" alt="" width="170px" height="170px">
                 </div>
                 <section data-mesa class="informacion-mesa3" id="informacion-mesa3">
@@ -95,7 +114,7 @@
                     </ul>
                 </section>
                 <div class="mesa4">
-                    <button  id="data-boton4" >mesa4<button>
+                    <button  id="data-boton4" >mesa4</button>
                     <img src="img/sillas.jpeg" alt="" width="170px" height="170px">
                 </div>
                 <section data-mesa class="informacion-mesa4" id="informacion-mesa4">
@@ -106,7 +125,7 @@
                     </ul>
                 </section>
                 <div class="mesa5">
-                    <button id="data-boton5">mesa5<button>
+                    <button id="data-boton5">mesa5</button>
                     <img src="img/sillas.jpeg" alt="" width="170px" height="170px">
                 </div>
                 <section data-mesa class="informacion-mesa5" id="informacion-mesa5">
@@ -117,7 +136,7 @@
                     </ul>
                 </section>
             <div class="mesa6">
-                <button id="data-boton6" >mesa6<button>
+                <button id="data-boton6" >mesa6</button>
                 <img src="img/sillas.jpeg" alt="" width="170px" height="170px">
             </div>
             <section data-mesa class="informacion-mesa6" id="informacion-mesa6">
@@ -128,7 +147,7 @@
                 </ul>
             </section>
             <div class="mesa7">
-                <button id="data-boton7">mesa7<button>
+                <button id="data-boton7">mesa7</button>
                 <img src="img/sillas.jpeg" alt="" width="170px" height="170px">
             </div>
             <section data-mesa class="informacion-mesa7" id="informacion-mesa7">
@@ -146,28 +165,31 @@
                 </ul>
             </section>
             <div class="mesa8">
-                <button>mesa8<button>
+                <button>mesa8</button>
                 <img src="img/sillas.jpeg" alt="" width="170px" height="170px">
             </div>
             <div class="mesa9">
-                <button>mesa9<button>
+                <button>mesa9</button>
                 <img src="img/sillas.jpeg" alt="" width="170px" height="170px">
             </div>
             <div class="mesa10">
-                <button>mesa10<button>
+                <button>mesa10</button>
                 <img src="img/sillas.jpeg" alt="" width="170px" height="170px">
             </div>
             <div class="mesa11">
-                <button>mesa11<button>
+                <button>mesa11</button>
                 <img src="img/sillas.jpeg" alt="" width="170px" height="170px">
             </div>
             <div class="mesa12">
-                <button>mesa12<button>
+                <button>mesa12</button>
                 <img src="img/sillas.jpeg" alt="" width="170px" height="170px">
             </div>
         </div>
+
+
+        <!-- ventas -->
         <div data-content class="ventas" id="ventas">
-          <table>
+            <table class="ventasinfo">
             <thead>
                 <tr>
                     <th>Descripcion</th><th>Costo</th><th>Fecha</th><th>Total</th>
@@ -186,10 +208,537 @@
             <tr>
                 <td>Combo 1</td><td>$17,00</td><td></td><td></td>
             </tr>
-          </table>
-        </div>
-     </div>
+        </table>
+    </div>
+    
+    
+    
+    
+    
+</div>
 
-<script src="./js/menu.js"></script>
+    <!-- Compra -->
+
+    <div class="compra" id="compra">
+        <div class="compraprueba">
+            
+            <button class="buttoncompra"> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg>
+                Agregar
+            </button>
+        </div>
+
+    </div>
+
+<div    data-mesa      class="container-items" id="comida-items">
+    <div class="card">
+        <div class="card-img"><div class="img"></div>
+    <img src="/img/pollo en brasapng.png" alt=""></div>
+    <div class="card-title">combo 1</div>
+    <div class="card-subtitle">Pollo, 4 hallaquitas, refresco grande.</div>
+    <hr class="card-divider">
+    <div class="card-footer">
+        <div class="card-price"><span>$</span> 17</div>
+        <button class="card-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+            </button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-img"><div class="img"></div>
+        <img src="/img/pollo en brasapng.png" alt=""></div>
+        <div class="card-title">combo 2</div>
+        <div class="card-subtitle">Pollo, Rac yuca, refresco grande.</div>
+        <hr class="card-divider">
+        <div class="card-footer">
+            <div class="card-price"><span>$</span> 19</div>
+            <button class="card-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+            </button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-img"><div class="img"></div>
+        <img src="/img/pollo en brasapng.png" alt=""></div>
+        <div class="card-title">combo 3</div>
+        <div class="card-subtitle"> 2 Pollo, 8 hallaquitas, yuca, refresco grande.</div>
+        <hr class="card-divider">
+        <div class="card-footer">
+            <div class="card-price"><span>$</span> 34</div>
+            <button class="card-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+            </button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-img"><div class="img"></div>
+        <img src="/img/pollo en brasapng.png" alt=""></div>
+        <div class="card-title">combo 4</div>
+        <div class="card-subtitle">Pollo, 4 hallaquitas.</div>
+        <hr class="card-divider">
+        <div class="card-footer">
+            <div class="card-price"><span>$</span> 15</div>
+            <button class="card-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+            </button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-img"><div class="img"></div>
+        <img src="/img/pollo en brasapng.png" alt=""></div>
+        <div class="card-title">combo 5</div>
+        <div class="card-subtitle">Medio pollo con papas fritas</div>
+        <hr class="card-divider">
+        <div class="card-footer">
+            <div class="card-price"><span>$</span> 13</div>
+            <button class="card-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+            </button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-img"><div class="img"></div>
+        <img src="/img/pollo en brasapng.png" alt=""></div>
+        <div class="card-title">combo 6</div>
+        <div class="card-subtitle">Medio pollo, 3 hallaquitas</div>
+        <hr class="card-divider">
+        <div class="card-footer">
+            <div class="card-price"><span>$</span> 17</div>
+            <button class="card-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+            </button>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-img"><div class="img"></div>
+        <img src="/img/pollo en brasapng.png" alt=""></div>
+        <div class="card-title">combo 7</div>
+        <div class="card-subtitle">Medio pollo con yuca</div>
+        <hr class="card-divider">
+        <div class="card-footer">
+            <div class="card-price"><span>$</span> 10</div>
+            <button class="card-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+            </button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-img"><div class="img"></div>
+        <img src="/img/pollo en brasapng.png" alt=""></div>
+        <div class="card-title">combo 8</div>
+        <div class="card-subtitle">Medio pollo solo</div>
+        <hr class="card-divider">
+        <div class="card-footer">
+            <div class="card-price"><span>$</span> 8</div>
+            <button class="card-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+            </button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-img"><div class="img"></div>
+        <img src="/img/pollo en brasapng.png" alt=""></div>
+        <div class="card-title">combo 9</div>
+        <div class="card-subtitle"> 1 Pollo, ensalada, hallaquita, refresco grande.</div>
+        <hr class="card-divider">
+        <div class="card-footer">
+            <div class="card-price"><span>$</span> 22</div>
+            <button class="card-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+            </button>
+        </div>
+        
+    </div>
+    
+    
+    
+    
+</div>
+
+      <div class="bebidas-items" id="bebida-items">
+
+          <div class="card">
+              <div class="card-img"><div class="img"></div>
+          <img src="/img/cocola.png" alt=""></div>
+          <div class="card-title">Refrescos</div>
+          <div class="card-subtitle">litro y medio</div>
+          <hr class="card-divider">
+          <div class="card-footer">
+              <div class="card-price"><span>$</span> 3</div>
+              <button class="card-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                  </button>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-img"><div class="img"></div>
+              <img src="/img/yukery png.png" alt=""></div>
+              <div class="card-title">Yukery</div>
+              <div class="card-subtitle">Litro y medio</div>
+              <hr class="card-divider">
+              <div class="card-footer">
+                  <div class="card-price"><span>$</span>5</div>
+                  <button class="card-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                  </button>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-img"><div class="img"></div>
+              <img src="/img/Coca-Cola png.webp" alt=""></div>
+              <div class="card-title">Refresco pequeño</div>
+              <div class="card-subtitle">De botella</div>
+              <hr class="card-divider">
+              <div class="card-footer">
+                  <div class="card-price"><span>$</span> 1</div>
+                  <button class="card-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                  </button>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-img"><div class="img"></div>
+              <img src="/img/maltapng.png" alt=""></div>
+              <div class="card-title">malta pequeña</div>
+              <div class="card-subtitle"></div>
+              <hr class="card-divider">
+              <div class="card-footer">
+                  <div class="card-price"><span>$</span> 1</div>
+                  <button class="card-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                  </button>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-img"><div class="img"></div>
+              <img src="/img/foto_original-removebg-preview.png" alt=""></div>
+              <div class="card-title">Gatorade</div>
+              <div class="card-subtitle">500ml</div>
+              <hr class="card-divider">
+              <div class="card-footer">
+                  <div class="card-price"><span>$</span> 3</div>
+                  <button class="card-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                  </button>
+              </div>
+          </div>
+          
+          <div class="card">
+              <div class="card-img"><div class="img"></div>
+              <img src="/img/OIP-removebg-preview.png" alt=""></div>
+              <div class="card-title">Yukery peq</div>
+              <div class="card-subtitle">botella 250ml</div>
+              <hr class="card-divider">
+              <div class="card-footer">
+                  <div class="card-price"><span>$</span> 1</div>
+                  <button class="card-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                  </button>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-img"><div class="img"></div>
+              <img src="/img/polarcitaestesi-removebg-preview.png" alt=""></div>
+              <div class="card-title">Polarcita</div>
+              <div class="card-subtitle">pequeña</div>
+              <hr class="card-divider">
+              <div class="card-footer">
+                  <div class="card-price"><span>$</span> 1</div>
+                  <button class="card-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                  </button>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-img"><div class="img"></div>
+              <img src="/img/R-removebg-preview.png" alt=""></div>
+              <div class="card-title">combo 3</div>
+              <div class="card-subtitle">Pollo, Rac yuca, refresco grande.</div>
+              <hr class="card-divider">
+              <div class="card-footer">
+                  <div class="card-price"><span>$</span> 19</div>
+                  <button class="card-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                  </button>
+               </div>
+          
+              </div>
+              <div class="card">
+                <div class="card-img"><div class="img"></div>
+                <img src="/img/0002907_agua-mineral-minalba-600-ml_450-removebg-preview.png" alt=""></div>
+                <div class="card-title">combo 3</div>
+                <div class="card-subtitle">Pollo, Rac yuca, refresco grande.</div>
+                <hr class="card-divider">
+                <div class="card-footer">
+                    <div class="card-price"><span>$</span> 19</div>
+                    <button class="card-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                    </button>
+                 </div>
+            
+                </div>
+                <div class="card">
+                    <div class="card-img"><div class="img"></div>
+                    <img src="/img/Polar-Pilsen-050321-removebg-preview.png" alt=""></div>
+                    <div class="card-title">combo 3</div>
+                    <div class="card-subtitle">Pollo, Rac yuca, refresco grande.</div>
+                    <hr class="card-divider">
+                    <div class="card-footer">
+                        <div class="card-price"><span>$</span> 19</div>
+                        <button class="card-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                        </button>
+                     </div>
+                
+                    </div>
+                    <div class="card">
+                        <div class="card-img"><div class="img"></div>
+                        <img src="/img/R-removebg-preview (1).png" alt=""></div>
+                        <div class="card-title">combo 3</div>
+                        <div class="card-subtitle">Pollo, Rac yuca, refresco grande.</div>
+                        <hr class="card-divider">
+                        <div class="card-footer">
+                            <div class="card-price"><span>$</span> 19</div>
+                            <button class="card-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                            </button>
+                         </div>
+                    
+                        </div>
+                        <div class="card">
+                            <div class="card-img"><div class="img"></div>
+                            <img src="/img/original-20-removebg-preview.png" alt=""></div>
+                            <div class="card-title">combo 3</div>
+                            <div class="card-subtitle">Pollo, Rac yuca, refresco grande.</div>
+                            <hr class="card-divider">
+                            <div class="card-footer">
+                                <div class="card-price"><span>$</span> 19</div>
+                                <button class="card-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                                </button>
+                             </div>
+                        
+                            </div>
+      </div>
+
+       <!-- comida -->
+
+      <div class="comida-options" id="comida-options">
+        <div class="card">
+            <div class="card-img"><div class="img"></div>
+            <img src="/img/130962413_2799192163673129_4273472028349021053_n-removebg-preview.png" alt=""></div>
+            <div class="card-title">Sopas</div>
+            <div class="card-subtitle">Mondongo, res, pollo</div>
+            <hr class="card-divider">
+            <div class="card-footer">
+                <div class="card-price"><span>$</span> 5</div>
+                <button class="card-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                </button>
+             </div>
+        
+            </div>
+        <div class="card">
+            <div class="card-img"><div class="img"></div>
+        <img src="/img/OIP-removebg-preview (1).png" alt=""></div>
+        <div class="card-title">Pollo a la plancha</div>
+        <div class="card-subtitle">2 contornos</div>
+        <hr class="card-divider">
+        <div class="card-footer">
+            <div class="card-price"><span>$</span> 10</div>
+            <button class="card-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><div class="img"></div>
+            <img src="/img/bistec.png" alt=""></div>
+            <div class="card-title">Bistec</div>
+            <div class="card-subtitle"></div>
+            <hr class="card-divider">
+            <div class="card-footer">
+                <div class="card-price"><span>$</span>10</div>
+                <button class="card-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><div class="img"></div>
+            <img src="/img/316485536_530049252326725_2626040804449110178_n-removebg-preview (1).png" alt=""></div>
+            <div class="card-title">Churrasco de la casa</div>
+            <div class="card-subtitle"></div>
+            <hr class="card-divider">
+            <div class="card-footer">
+                <div class="card-price"><span>$</span> 17</div>
+                <button class="card-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><div class="img"></div>
+            <img src="/img/kisspng-french-fries-facheiros-motel-fried-rice-fillet-fry-feijoada-5b23ee4d6011c8.8337218315290814213935-removebg-preview.png" alt=""></div>
+            <div class="card-title">Chuleta</div>
+            <div class="card-subtitle">2 contornos</div>
+            <hr class="card-divider">
+            <div class="card-footer">
+                <div class="card-price"><span>$</span> 13</div>
+                <button class="card-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><div class="img"></div>
+            <img src="/img/239906744_537545674197274_6639831673478287283_n-removebg-preview.png" alt=""></div>
+            <div class="card-title">Parrilla de la casa</div>
+            <div class="card-subtitle">Carne,pollo,chorizo,chuleta,tomate,
+            ,papas fritas o yuca y 1/2 pollo asado</div>
+            <hr class="card-divider">
+            <div class="card-footer">
+                <div class="card-price"><span>$</span> 49</div>
+                <button class="card-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-img"><div class="img"></div>
+            <img src="/img/313971513_529728278564110_2500520948208485147_n-removebg-preview.png" alt=""></div>
+            <div class="card-title">Parrila criolla</div>
+            <div class="card-subtitle">Pollo o carne con papas fritas o yuca</div>
+            <hr class="card-divider">
+            <div class="card-footer">
+                <div class="card-price"><span>$</span> 27</div>
+                <button class="card-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><div class="img"></div>
+            <img src="/img/117634701_327811968586341_8597895630382851235_n-removebg-preview.png" alt=""></div>
+            <div class="card-title">Parrilla Mixta</div>
+            <div class="card-subtitle">Pollo y carne con papas fritas o yuca</div>
+            <hr class="card-divider">
+            <div class="card-footer">
+                <div class="card-price"><span>$</span> 42</div>
+                <button class="card-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                </button>
+            </div>
+        </div>
+       
+            <div class="card">
+              <div class="card-img"><div class="img"></div>
+              <img src="/img/331337362_159665323160118_3253085054875850273_n-removebg-preview.png" alt=""></div>
+              <div class="card-title">Papas fritas</div>
+              <div class="card-subtitle">Racion</div>
+              <hr class="card-divider">
+              <div class="card-footer">
+                  <div class="card-price"><span>$</span> 5</div>
+                  <button class="card-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                    </button>
+                </div>
+                
+            </div>
+            <div class="card">
+                <div class="card-img"><div class="img"></div>
+                <img src="/img/OIP-removebg-preview (2).png" alt=""></div>
+                <div class="card-title">Ensalada mixtas</div>
+                <div class="card-subtitle">Lechuga, tomate,cebolla, pepino.</div>
+                <hr class="card-divider">
+                <div class="card-footer">
+                    <div class="card-price"><span>$</span> 6</div>
+                    <button class="card-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                    </button>
+                 </div>
+            
+                </div>
+                <div class="card">
+                    <div class="card-img"><div class="img"></div>
+                    <img src="/img/pineapple-coleslaw-scaled-removebg-preview.png" alt=""></div>
+                    <div class="card-title">Ensalada Rayada</div>
+                    <div class="card-subtitle">Repollo, zanahoria con mayonesa.</div>
+                    <hr class="card-divider">
+                    <div class="card-footer">
+                        <div class="card-price"><span>$</span> 6</div>
+                        <button class="card-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                        </button>
+                     </div>
+                
+                    </div>
+            <div class="card">
+                  <div class="card-img"><div class="img"></div>
+                  <img src="/img/331615062_732685368548963_3837920359077765109_n-removebg-preview.png" alt=""></div>
+                  <div class="card-title">Ensalada Palmito</div>
+                  <div class="card-subtitle">Aguacate con palmito</div>
+                  <hr class="card-divider">
+                  <div class="card-footer">
+                      <div class="card-price"><span>$</span> 10</div>
+                      <button class="card-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                      </button>
+                   </div>
+              
+                  </div>
+
+                  <div class="card">
+                    <div class="card-img"><div class="img"></div>
+                    <img src="/img/yuca.png" alt=""></div>
+                    <div class="card-title">Yuca sancochada</div>
+                    <div class="card-subtitle">Racion</div>
+                    <hr class="card-divider">
+                    <div class="card-footer">
+                        <div class="card-price"><span>$</span> 3</div>
+                        <button class="card-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                        </button>
+                     </div>
+                
+                    </div>
+            <div class="card">
+                  <div class="card-img"><div class="img"></div>
+                  <img src="/img/OIP-removebg-preview (3).png" alt=""></div>
+                  <div class="card-title">Ensalada Cesar</div>
+                  <div class="card-subtitle"></div>
+                  <hr class="card-divider">
+                  <div class="card-footer">
+                      <div class="card-price"><span>$</span> 10</div>
+                      <button class="card-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                      </button>
+                   </div>
+              
+                  </div>
+                  <div class="card">
+                      <div class="card-img"><div class="img"></div>
+                      <img src="/img/R-removebg-preview (2).png" alt=""></div>
+                      <div class="card-title">Hallaquitas</div>
+                      <div class="card-subtitle">4 hallaquitas</div>
+                      <hr class="card-divider">
+                      <div class="card-footer">
+                          <div class="card-price"><span>$</span> 2</div>
+                          <button class="card-btn">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                          </button>
+                       </div>
+                  
+                      </div>
+                </div>
+            
+                
+    </div>
+
+
+
+    <script src="./js/menu.js"></script>
 </body>
 </html>
