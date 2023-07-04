@@ -33,9 +33,12 @@ const compra= document.getElementById('compra');
 
  butonmesas.addEventListener("click", () => {
    
-    mesas.classList.toggle("muestra");
-     
-    
+    mesas.classList.toggle("abrir-mesas");
+    ventas.classList.remove("showventas");
+    itemscomida.classList.remove("abrir");
+    itemsbebidas.classList.remove("abrir");
+    comidaop.classList.remove("abrir");
+    compra.classList.remove("showcompra");
    
 });
 
@@ -43,9 +46,12 @@ const compra= document.getElementById('compra');
 
 butonventas.addEventListener("click", () => {
    
-    ventas.classList.toggle("muestra");
-    mesas.classList.remove("abrir");
-    
+    ventas.classList.toggle("showventas");
+    mesas.classList.remove("abrir-mesas");
+    itemscomida.classList.remove("abrir");
+    itemsbebidas.classList.remove("abrir");
+    comidaop.classList.remove("abrir");
+    compra.classList.remove("showcompra");
     
    
 });
@@ -54,30 +60,16 @@ butonventas.addEventListener("click", () => {
 
 butoncompra.addEventListener("click", () => {
    
-    compra.classList.toggle("muestra");
-     ventas.classList.remove("muestra");
+    compra.classList.toggle("showcompra");
+     ventas.classList.remove("showventas");
     
-   
+     itemscomida.classList.remove("abrir");
+     itemsbebidas.classList.remove("abrir");
+     comidaop.classList.remove("abrir");
+     mesas.classList.remove("abrir-mesas");
 });
 
-
-// const targets= document.querySelectorAll('[data-target]');
-// const content=document.querySelectorAll('[data-content]')
-
-// targets.forEach(target =>{
-//     target.addEventListener('click', ()=>{
-
-//         content.forEach(c=>{
-//             c.classList.remove('active')
-//         })
-
-//         const t =document.querySelector(target.dataset.target)
-//         t.classList.add('active')
-//     })
-// })
-
-// comida
-
+// comidaaaaaaa
 
 
 const comida = document.getElementById("combosboton");
@@ -94,7 +86,9 @@ comida.addEventListener("click", () => {
     itemscomida.classList.toggle("abrir");
     itemsbebidas.classList.remove("abrir");
     comidaop.classList.remove("abrir");
-   
+    ventas.classList.remove("showventas");
+    mesas.classList.remove("abrir-mesas");
+    compra.classList.remove("showcompra");
 });
 
 
@@ -103,6 +97,9 @@ bebidas.addEventListener("click", () => {
     itemsbebidas.classList.toggle("abrir");
     itemscomida.classList.remove("abrir");
     comidaop.classList.remove("abrir");
+    ventas.classList.remove("showventas");
+    mesas.classList.remove("abrir-mesas");
+    compra.classList.remove("showcompra");
 });
 
 comer.addEventListener("click", () => {
@@ -110,6 +107,9 @@ comer.addEventListener("click", () => {
     comidaop.classList.toggle("abrir");
     itemsbebidas.classList.remove("abrir");
     itemscomida.classList.remove("abrir");
+    ventas.classList.remove("showventas");
+    mesas.classList.remove("abrir-mesas");
+    compra.classList.remove("showcompra");
 });
 
 

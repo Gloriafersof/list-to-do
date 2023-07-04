@@ -3,4 +3,11 @@
 @import "./infomesa.css";
 @import "./ventas.css";
 @import './comida.css';
-@import './compra.css'
+@import './compra.css';
+@import './responsives.css';
+
+
+
+html{
+    scroll-behavior: smooth;
+}

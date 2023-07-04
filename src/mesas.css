@@ -19,13 +19,14 @@ body{
    margin-left: 150px;
    background-color: beige;
    width: 80%;
-   display: grid;
- display: none;
+
+  display: none;
 
    
 }
 
-.abrir{
+.abrir-mesas{
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -34,17 +35,17 @@ body{
 
 
 
-  [data-content]{
+  /* [data-content]{
     display: none;
   }
   .active[data-content]{
     display: grid;
-  }
+  } */
 
 
-  .content1{
+  /* .content1{
     
-  }
+  } */
 
 
 .mesa1 button{

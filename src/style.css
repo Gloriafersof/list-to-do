@@ -29,7 +29,7 @@
     width: 100%;
 }   
 .menu{
-    display: none;
+   
     justify-content: center;
     align-items: center;
     font-size: 22px;
@@ -65,12 +65,6 @@
 
 
 
-@media screen and (min-width: 778px){
-    .menu{
-        display: block;
-
-}
-}
 
 .content{
     top: 0px;
