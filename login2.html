@@ -3,64 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/login2.css">
+    <link rel="stylesheet" href="./src/css/login2.css">
     <title>Document</title>
 </head>
 <body>
     <div class="box">
-        <form >
-            <div class="iniciar" id="iniciar">
+        <form  id="form"  >
+                <div class="iniciar" id="iniciar">
 
-                <h2>Iniciar Sesion</h2>
-                <div class="inputBox">
-                    <input type="text" required="required">
-                    <span>Usename</span>
-                    <i></i>
+                    <h2>Iniciar Sesion</h2>
+                    <div class="inputBox">
+                        <input type="email" placeholder="email" name="emailname" id="emailIniciar">
+                        <span>Correo</span>
+                        <i></i>
+                        
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" placeholder="password" name="passwordname" id="contraseñaIniciar">
+                        <span>Password</span>
+                        
+                        <i></i>
+                        
+                    </div>
+                    
+                    <div class="links">
+                        <a href="#">Forgot password</a>
+                        <a id="crear" href="#">Registrarte</a>
+                    </div>
+                   
                 </div>
-                <div class="inputBox">
-                    <input type="password" required="required">
-                    <span>Password</span>
-                    <i></i>
-                </div>
-                <div class="opciones">
-                    <label for=""><input type="checkbox" name="" >Mesero</label>
-                    <label for=""><input type="checkbox" name="" >Cajero</label>
-                  </div>
-                <div class="links">
-                    <a href="#">Forgot password</a>
-                    <a id="crear" href="#">Registrarte</a>
-                </div>
-                <input type="submit" value="Login">
-            </div>
-            <div class="registro" id="registro">
+
+
+
+                <div class="registro" id="registro">
 
                 <h2>Registrate</h2>
+                <div class="inputBox" id="grupo__nombre">
+                    <input type="text" id="nombrereginput"  required>
+                    <span>Nombre Completo</span>
+                    <i></i>
+                    
+                  
+                </div>
+               
+                </p>
                 <div class="inputBox">
-                    <input type="text" required="required">
-                    <span>Usename</span>
+                    <input type="password" id="contraseñareginput"   required>
+                    <span>Contraseña</span>
+                    
+                   
                     <i></i>
                 </div>
                 <div class="inputBox">
-                    <input type="password" required="required">
-                    <span>Password</span>
-                    <i></i>
-                </div>
-                <div class="inputBox">
-                    <input type="text" required="required">
+                    <input type="text"  id="correoreginput"  required>
                     <span>Correo</span>
+                    
+                
                     <i></i>
                 </div>
-                <div class="opciones">
-                    <label for=""><input type="checkbox" name="" >Mesero</label>
-                    <label for=""><input type="checkbox" name="" >Cajero</label>
+                <div>
+                    <input type="radio" id="meserocheck" name="drone"   checked>
+                    <label for="huey">Mesero</label>
+                  </div>
+              
+                  <div>
+                    <input type="radio" id="cajerocheck" name="drone" checked>
+                    <label for="dewey">Cajero</label>
                   </div>
                 
-                <input type="submit" id="botonregistrar"  value="Registrar">
-            </div>
-        </form>
+                </div>
+            </form>
+          
+        </div>
+        <div class="orden">
+            <button id="loginBoton" class="loginBoton">Login</button>
+            <button type="submit" id="botonregistrar" class="btn"   value="Registrar">Registrate</button>
+            <button type="submit" id="botonvolver" class="btn2" value="Ya tengo"> Ya tengo cuenta</button>
+        </div>
+        <p class="warnings" id="warnings"></p>
         
-    </div>
-    
     <div class="caja">
         <img src="/img/pollo en brasapng.png" width="450px" height="450px"alt=""> 
     </div>
@@ -70,7 +91,9 @@
     </div>
 
 
-    
-    <script src="./js/iniciar.js"></script>
+    <script src="./src/js/firebase/firebase.config.js" type="module"></script>
+    <script src="./src/js/firebase/firestore.js" type="module"></script>
+    <script src="./src/js/firebase/fireauth.js" type="module"></script>
+    <script src="./src/js/iniciar.js"></script>
 </body>
 </html>

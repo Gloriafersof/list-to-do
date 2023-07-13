@@ -1,5 +1,6 @@
 body{
-  background-image: url('../img/Imagen\ de\ WhatsApp\ 2023-06-29\ a\ las\ 14.05.22.jpg');
+  background-image:url('/img/Imagen\ de\ WhatsApp\ 2023-06-29\ a\ las\ 14.05.22.jpg') ;
+
   background-repeat: no-repeat;
   background-position:  center;
   height: 2100px;
@@ -195,3 +196,47 @@ body{
 }
 
 
+.cerrarSesion{
+   color: aliceblue;
+    border: none;
+    width: 10em;
+    height: 3em;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #242121;
+    cursor: pointer;
+    transition: all 450ms ease-in-out;
+    font-size: 20px;
+  }
+  
+  .sparkle {
+    fill: #AAAAAA;
+    transition: all 800ms ease;
+  }
+  
+  .text {
+    font-weight: 600;
+    color: #AAAAAA;
+    font-size: medium;
+  }
+  
+  .cerrarSesion:hover {
+    background: linear-gradient(0deg,#d2403d,#eac53f);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+    0px 0px 180px 0px #fff200;
+    transform: translateY(-2px);
+  }
+  
+  .cerrarSesion:hover .text {
+    color: white;
+  }
+  
+  .cerrarSesion:hover .sparkle {
+    fill: white;
+    transform: scale(1.2);
+  } 
